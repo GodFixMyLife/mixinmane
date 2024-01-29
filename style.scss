@@ -1,0 +1,22 @@
+%fors {
+    background-color: black;
+    color: yellow;
+    padding: 15px;
+    border-radius: 15px;
+    border-color: green;
+}
+.eco {
+    @extend %fors;
+}
+
+@mixin button($color, $background, $radius) {
+    color: $color;
+    background-color: $background;
+    border-radius: $radius;
+    padding: 15px 30px;
+    background-color: $background;
+    font-weight: bold;
+}
+.fullbuy {
+    @include button(white,black ,15px )
+}
